@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Playas;
 use App\Http\Controllers\Usuario;
 use App\Http\Controllers\DatosController;
+use App\Http\Controllers\LibroController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -40,4 +42,6 @@ Route::get('/usuarios/{id}', [Usuario::class, 'show']);
 
 Route::post('/procesar-datos', [DatosController::class, 'procesar']);
 
-Route::get('/procesar-datos' , [DatosController::class, 'form_procesar']);
+Route::get('/procesar-datos'     , [DatosController::class, 'form_procesar']);
+Route::get('/alta-libro-tolkien' , [LibroController::class, 'alta_libro']);
+Route::get('/mostrar-libro-tolkien/{id}' , [LibroController::class, 'mostrar_libro']);
