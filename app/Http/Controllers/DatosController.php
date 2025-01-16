@@ -43,6 +43,6 @@ class DatosController extends Controller
     {
 
 
-        return view('formulario_playas');
+        return view('playas');
     }
 }

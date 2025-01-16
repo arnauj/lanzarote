@@ -15,6 +15,7 @@ class LibroController extends Controller
 
         $libro = new Libro();
 
+
         $libro->nombre = 'El señor de los anillos';
         $libro->autor = 'Tolkien';
         $libro->descripcion = 'Enanos y orcos';

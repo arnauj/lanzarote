@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playas</title>
-</head>
-<body>
-    <h1>{{ $id }}</h1>
+@extends('layout')
 
-    <p>asdfas df asdfasfdasd{{ }}</p>
-</body>
-</html>
+
+@section('title', 'Página de inicio')
+
+@section('content')
+
+    <p>Contenido de la página de inicio...</p>
+
+
+@endsection
