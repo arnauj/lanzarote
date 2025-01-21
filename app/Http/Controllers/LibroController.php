@@ -37,5 +37,15 @@ class LibroController extends Controller
     }
 
 
+    function listado()
+    {
+
+        $libros = Libro::all();
+
+
+        return view('libros.libro',compact('libros'));
+    }
+
+
 
 }

@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('editorial');
             $table->string('autor'); 
             $table->string('descripcion'); 
+            $table->integer('anho'); 
+            $table->string('genero'); 
             //$table->string('email')->unique();
             //$table->timestamp('email_verified_at')->nullable();
             //$table->string('password');
