@@ -23,8 +23,8 @@
     <tr>
             <td>
                 <a href="/libros/{{ $libro->id }}" class="btn btn-primary"><i class="bi bi-search"></i></a>
-                <a href="/libros/update/{{ $libro->id }}" class="btn btn-primary"><i class="bi bi-pencil-square"></i></a>
-                <a href="/libros/delete/{{ $libro->id }}" class="btn btn-danger"><i class="bi bi-trash"></i></a>
+                <a href="/libros/actualizar/{{ $libro->id }}" class="btn btn-primary"><i class="bi bi-pencil-square"></i></a>
+                <a href="/libros/eliminar/{{ $libro->id }}" class="btn btn-danger"><i class="bi bi-trash"></i></a>
 
             </td>
             <td>{{ $libro->nombre }}</td>
@@ -39,7 +39,7 @@
 
     </table>
 
-    <a href="/create" class="btn btn-success"><i class="bi bi-plus"></i> Nuevo libro</a>
+    <a href="/libros/nuevo" class="btn btn-success"><i class="bi bi-plus"></i> Nuevo libro</a>
 
 
 @endsection
