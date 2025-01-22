@@ -31,7 +31,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'JK Rowling',
                 'descripcion' => 'La piedra filosofal',
                 'anho'       => '2001',
-                'genero'     => 'Fantasía'
+                'genero'     => 'FA'
             ],
             [
                 'nombre'    => 'El señor de los anillos',
@@ -39,7 +39,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'J.R.R. Tolkien',
                 'descripcion' => 'La comunidad del anillo',
                 'anho'       => '1954',
-                'genero'     => 'Fantasía'
+                'genero'     => 'FA'
             ],
             [
                 'nombre'    => 'Cien años de soledad',
@@ -47,7 +47,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Gabriel García Márquez',
                 'descripcion' => 'Una saga familiar en Macondo',
                 'anho'       => '1967',
-                'genero'     => 'Realismo mágico'
+                'genero'     => 'RM'
             ],
             [
                 'nombre'    => '1984',
@@ -55,15 +55,15 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'George Orwell',
                 'descripcion' => 'Una distopía totalitaria',
                 'anho'       => '1949',
-                'genero'     => 'Ciencia ficción'
+                'genero'     => 'CF'
             ],
             [
                 'nombre'    => 'Don Quijote de la Mancha',
                 'editorial' => 'Planeta',
                 'autor'     => 'Miguel de Cervantes',
-                'descripcion' => 'Las aventuras de un caballero loco',
+                'descripcion' => 'Las AVs de un caballero loco',
                 'anho'       => '1605',
-                'genero'     => 'Novela clásica'
+                'genero'     => 'NC'
             ],
             [
                 'nombre'    => 'Matar a un ruiseñor',
@@ -71,7 +71,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Harper Lee',
                 'descripcion' => 'Un juicio en el sur de Estados Unidos',
                 'anho'       => '1960',
-                'genero'     => 'Ficción social'
+                'genero'     => 'FS'
             ],
             [
                 'nombre'    => 'La sombra del viento',
@@ -79,7 +79,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Carlos Ruiz Zafón',
                 'descripcion' => 'Un misterio literario en la Barcelona de posguerra',
                 'anho'       => '2001',
-                'genero'     => 'Suspenso'
+                'genero'     => 'SP'
             ],
             [
                 'nombre'    => 'El código Da Vinci',
@@ -87,7 +87,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Dan Brown',
                 'descripcion' => 'Un thriller de misterio y arte',
                 'anho'       => '2003',
-                'genero'     => 'Suspenso'
+                'genero'     => 'SP'
             ],
             [
                 'nombre'    => 'Orgullo y prejuicio',
@@ -95,7 +95,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Jane Austen',
                 'descripcion' => 'La relación entre Elizabeth Bennet y Darcy',
                 'anho'       => '1813',
-                'genero'     => 'Romántico'
+                'genero'     => 'RO'
             ],
             [
                 'nombre'    => 'Frankenstein',
@@ -103,7 +103,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Mary Shelley',
                 'descripcion' => 'El monstruo creado por un científico loco',
                 'anho'       => '1818',
-                'genero'     => 'Terror'
+                'genero'     => 'TE'
             ],
             [
                 'nombre'    => 'El gran Gatsby',
@@ -111,7 +111,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'F. Scott Fitzgerald',
                 'descripcion' => 'Un estudio sobre el sueño americano',
                 'anho'       => '1925',
-                'genero'     => 'Tragedia'
+                'genero'     => 'TR'
             ],
             [
                 'nombre'    => 'El alquimista',
@@ -119,7 +119,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Paulo Coelho',
                 'descripcion' => 'Una historia sobre la búsqueda de los sueños',
                 'anho'       => '1988',
-                'genero'     => 'Ficción filosófica'
+                'genero'     => 'FF'
             ],
             [
                 'nombre'    => 'Los pilares de la tierra',
@@ -127,15 +127,15 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Ken Follett',
                 'descripcion' => 'Una historia épica en la Edad Media',
                 'anho'       => '1989',
-                'genero'     => 'Histórico'
+                'genero'     => 'HT'
             ],
             [
                 'nombre'    => 'La cabaña',
                 'editorial' => 'Grupo Nelson',
                 'autor'     => 'William P. Young',
-                'descripcion' => 'La reflexión de un hombre tras una tragedia',
+                'descripcion' => 'La reflexión de un hombre tras una TR',
                 'anho'       => '2007',
-                'genero'     => 'Religión'
+                'genero'     => 'RL'
             ],
             [
                 'nombre'    => 'El principito',
@@ -143,15 +143,15 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Antoine de Saint-Exupéry',
                 'descripcion' => 'Una fábula sobre la importancia de lo esencial',
                 'anho'       => '1943',
-                'genero'     => 'Fantasía'
+                'genero'     => 'FA'
             ],
             [
                 'nombre'    => 'La isla del tesoro',
                 'editorial' => 'Cassell & Co.',
                 'autor'     => 'Robert Louis Stevenson',
-                'descripcion' => 'La aventura de un joven en busca de un tesoro',
+                'descripcion' => 'La AV de un joven en busca de un tesoro',
                 'anho'       => '1883',
-                'genero'     => 'Aventura'
+                'genero'     => 'AV'
             ],
             [
                 'nombre'    => 'Crimen y castigo',
@@ -159,7 +159,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Fiódor Dostoyevski',
                 'descripcion' => 'El dilema moral de un joven estudiante',
                 'anho'       => '1866',
-                'genero'     => 'Psicológico'
+                'genero'     => 'PS'
             ],
             [
                 'nombre'    => 'El retrato de Dorian Gray',
@@ -167,15 +167,15 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Oscar Wilde',
                 'descripcion' => 'La historia de un hombre que no envejece',
                 'anho'       => '1890',
-                'genero'     => 'Ficción gótica'
+                'genero'     => 'FG'
             ],
             [
                 'nombre'    => 'La odisea',
                 'editorial' => 'Varios',
                 'autor'     => 'Homero',
-                'descripcion' => 'Las aventuras de Ulises en su regreso a casa',
+                'descripcion' => 'Las AVs de Ulises en su regreso a casa',
                 'anho'       => '100',
-                'genero'     => 'Épico'
+                'genero'     => 'EP'
             ],
             [
                 'nombre'    => 'El nombre de la rosa',
@@ -183,7 +183,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Umberto Eco',
                 'descripcion' => 'Un asesinato en un monasterio medieval',
                 'anho'       => '1980',
-                'genero'     => 'Histórico'
+                'genero'     => 'HT'
             ],
             [
                 'nombre'    => 'Los juegos del hambre',
@@ -191,15 +191,15 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Suzanne Collins',
                 'descripcion' => 'Un reality mortal en un futuro distópico',
                 'anho'       => '2008',
-                'genero'     => 'Ciencia ficción'
+                'genero'     => 'CF'
             ],
             [
                 'nombre'    => 'El Hobbit',
                 'editorial' => 'George Allen & Unwin',
                 'autor'     => 'J.R.R. Tolkien',
-                'descripcion' => 'La aventura de Bilbo Bolsón',
+                'descripcion' => 'La AV de Bilbo Bolsón',
                 'anho'       => '1937',
-                'genero'     => 'Fantasía'
+                'genero'     => 'FA'
             ],
             [
                 'nombre'    => 'El lobo estepario',
@@ -207,7 +207,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Hermann Hesse',
                 'descripcion' => 'Un hombre dividido entre dos mundos',
                 'anho'       => '1927',
-                'genero'     => 'Psicológico'
+                'genero'     => 'PS'
             ],
             [
                 'nombre'    => 'La divina comedia',
@@ -215,7 +215,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Dante Alighieri',
                 'descripcion' => 'Un viaje a través del Infierno, el Purgatorio y el Paraíso',
                 'anho'       => '1320',
-                'genero'     => 'Poesía épica'
+                'genero'     => 'PE'
             ],
             [
                 'nombre'    => 'El diario de Ana Frank',
@@ -223,15 +223,15 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Ana Frank',
                 'descripcion' => 'El testimonio de una niña judía en la Segunda Guerra Mundial',
                 'anho'       => '1947',
-                'genero'     => 'Memorias'
+                'genero'     => 'MM'
             ],
             [
                 'nombre'    => 'La carretera',
                 'editorial' => 'Knopf',
                 'autor'     => 'Cormac McCarthy',
-                'descripcion' => 'Un padre y su hijo en un mundo post-apocalíptico',
+                'descripcion' => 'Un padre y su hijo en un mundo PA',
                 'anho'       => '2006',
-                'genero'     => 'Post-apocalíptico'
+                'genero'     => 'PA'
             ],
             [
                 'nombre'    => 'Rayuela',
@@ -239,7 +239,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Julio Cortázar',
                 'descripcion' => 'Una novela que puede leerse en distintos órdenes',
                 'anho'       => '1963',
-                'genero'     => 'Literatura argentina'
+                'genero'     => 'LA'
             ],
             [
                 'nombre'    => 'La metamorfosis',
@@ -247,7 +247,7 @@ class LibrosSeeder extends Seeder
                 'autor'     => 'Franz Kafka',
                 'descripcion' => 'Un hombre se convierte en insecto',
                 'anho'       => '1915',
-                'genero'     => 'Ficción surrealista'
+                'genero'     => 'FC'
             ] 
         ]        
         );

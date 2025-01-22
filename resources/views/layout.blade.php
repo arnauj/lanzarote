@@ -8,10 +8,9 @@
 </head>
 <body>
 
-    @include('nav')
-
-
-
-    @yield('content')
+    <div class="container">
+        @include('nav')
+        @yield('content')       
+    </div>
 </body>
 </html>

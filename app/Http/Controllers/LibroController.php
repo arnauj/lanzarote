@@ -42,10 +42,18 @@ class LibroController extends Controller
 
         $libros = Libro::all();
 
+        $GENEROS = Libro::GENEROS;
 
-        return view('libros.libro',compact('libros'));
+
+        return view('libros.libro',compact('libros','GENEROS'));
     }
 
 
+    function alta()
+    {
+        $GENEROS = Libro::GENEROS;
+        
+        return view('libros.formulario',compact('GENEROS'));
+    }
 
 }
