@@ -30,10 +30,21 @@
                 @endforeach
             </select>
         </div>
+        <div class="mb-3">
+            <label for="editorial" class="form-label">Editorial</label>
+            <select name="editorial" id="editorial" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option value="">Selecciona una editorial...</option>
+                @foreach ($EDITORIALES as $clave_editorial => $texto_editorial)
+        
+                    <option value="{{ $clave_editorial }}">{{ $texto_editorial }}</option>
+
+                @endforeach
+            </select>
+        </div>
 
         <div class="mb-3">
             <label for="descripcion" class="form-label">Descripción</label>
-            <textarea name="descripcion" class="form-control" id="descripcion">Descripción...</textarea>
+            <textarea name="descripcion" class="form-control" id="descripcion" placeholder="Descripción..."></textarea>
         </div>
 
 

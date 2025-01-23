@@ -40,20 +40,22 @@ class LibroController extends Controller
     function listado()
     {
 
-        $libros = Libro::all();
+        $libros = Libro::paginate(7);
 
-        $GENEROS = Libro::GENEROS;
+        $GENEROS     = Libro::GENEROS;
+        $EDITORIALES = Libro::EDITORIALES;
 
 
-        return view('libros.libro',compact('libros','GENEROS'));
+        return view('libros.libro',compact('libros','GENEROS','EDITORIALES'));
     }
 
 
     function alta()
     {
-        $GENEROS = Libro::GENEROS;
+        $GENEROS     = Libro::GENEROS;
+        $EDITORIALES = Libro::EDITORIALES;
         
-        return view('libros.formulario',compact('GENEROS'));
+        return view('libros.formulario',compact('GENEROS','EDITORIALES'));
     }
 
 }

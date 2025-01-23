@@ -30,5 +30,34 @@ class Libro extends Model
         ,'FC' => 'Ficción surrealista'
     ];
 
+    const EDITORIALES = [
+         'AN' => 'Anaya'
+        ,'MN' => 'Minotauro'
+        ,'SD' => 'Sudamericana'
+        ,'SW' => 'Secker & Warburg'
+        ,'PL' => 'Planeta'
+        ,'JB' => 'J.B. Lippincott & Co.'
+        ,'PC' => 'Penguin Classics'
+        ,'LH' => 'Lackington, Hughes, Harding, Mavor & Jones '
+        ,'CS' => 'Charles Scribner\'s Sons'
+        ,'HP' => 'HarperOne'
+        ,'PJ' => 'Plaza & Janés'
+        ,'GN' => 'Grupo Nelson'
+        ,'RH' => 'Reynal & Hitchcock'
+        ,'CC' => 'Cassell & Co.'
+        ,'TM' => 'The Russian Messenger'
+        ,'WL' => 'Ward, Lock & Co.'
+        ,'VR' => 'Varios'
+        ,'EP' => 'Ediciones Planeta'
+        ,'SP' => 'Scholastic Press'
+        ,'GA' => 'George Allen & Unwin'
+        ,'FV' => 'S. Fischer Verlag'
+        ,'CP' => 'Contact Publishing'
+        ,'KN' => 'Knopf'
+        ,'ES' => 'Editorial Sudamericana'
+        ,'KW' => 'Kurt Wolff Verlag'
+        
+    ];
+
 
 }
