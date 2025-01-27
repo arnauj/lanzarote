@@ -49,4 +49,6 @@ Route::get('/mostrar-libro-tolkien/{id}' , [LibroController::class, 'mostrar_lib
 
 Route::get('/libros'       , [LibroController::class, 'listado']);
 
-Route::get('/libros/nuevo' , [LibroController::class, 'alta']);
+Route::get('/libros/nuevo'  , [LibroController::class, 'alta'])->name('libros.alta');
+Route::post('/libros/nuevo' , [LibroController::class, 'almacenar'])->name('libros.almacenar');
+

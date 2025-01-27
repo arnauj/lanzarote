@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nombre');
             $table->char('editorial',2);
             $table->string('autor'); 
-            $table->string('descripcion'); 
+            $table->text('descripcion'); 
             $table->integer('anho'); 
             $table->char('genero',2); 
             //$table->string('email')->unique();
