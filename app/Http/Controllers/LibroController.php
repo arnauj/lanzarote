@@ -82,7 +82,7 @@ descripcion
 
         $validacion_genero = substr($validacion_genero,0,-1);
         
-        $request->validate([
+        $validatedData = $request->validate([
             'nombre'         => 'required|string|max:255',
             'autor'          => 'required|string|max:255',
             'anho'           => 'required|integer',
@@ -112,7 +112,7 @@ descripcion
 
         ]);
     
-
+        
 
 
 
@@ -128,7 +128,11 @@ descripcion
         $libro->save();
 
 
-        return redirect()->route('libros.alta')->with('success', 'Libro insertado correctamente.');
+        return redirect()->route('libros.alta')->with([
+                 'success'  => 'Libro insertado correctamente.'
+                ,'formData' => $validatedData
+            ]
+        );
 
     }
 
