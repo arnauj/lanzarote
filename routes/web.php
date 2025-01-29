@@ -47,8 +47,12 @@ Route::get('/alta-libro-tolkien' , [LibroController::class, 'alta_libro']);
 Route::get('/mostrar-libro-tolkien/{id}' , [LibroController::class, 'mostrar_libro']);
 
 
-Route::get('/libros'       , [LibroController::class, 'listado']);
+Route::get('/libros'       , [LibroController::class, 'listado'])->name('libros.listado');
 
-Route::get('/libros/nuevo'  , [LibroController::class, 'alta'])->name('libros.alta');
-Route::post('/libros/nuevo' , [LibroController::class, 'almacenar'])->name('libros.almacenar');
+
+Route::get('/libro/{id}'            , [LibroController::class, 'mostrar'])->name('libros.mostrar');
+Route::get('/libro/actualizar/{id}' , [LibroController::class, 'actualizar'])->name('libros.actualizar');
+Route::get('/libro/eliminar/{id}'   , [LibroController::class, 'eliminar'])->name('libros.eliminar');
+Route::get('/libros/nuevo'          , [LibroController::class, 'alta'])->name('libros.alta');
+Route::post('/libros/nuevo'         , [LibroController::class, 'almacenar'])->name('libros.almacenar');
 

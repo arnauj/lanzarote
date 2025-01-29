@@ -23,9 +23,9 @@
     <tr>
             <td>
                 <div>
-                    <a href="/libros/{{ $libro->id }}" class="btn btn-primary"><i class="bi bi-search"></i></a>
-                    <a href="/libros/actualizar/{{ $libro->id }}" class="btn btn-primary"><i class="bi bi-pencil-square"></i></a>
-                    <a href="/libros/eliminar/{{ $libro->id }}" class="btn btn-danger"><i class="bi bi-trash"></i></a>
+                    <a href="/libro/{{ $libro->id }}" class="btn btn-primary"><i class="bi bi-search"></i></a>
+                    <a href="/libro/actualizar/{{ $libro->id }}" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
+                    <a href="/libro/eliminar/{{ $libro->id }}" class="btn btn-danger"><i class="bi bi-trash"></i></a>
                 </div>
 
             </td>
