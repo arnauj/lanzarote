@@ -1,50 +1,26 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Playas;
-use App\Http\Controllers\Usuario;
+
 use App\Http\Controllers\DatosController;
 use App\Http\Controllers\LibroController;
-
 
 Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-
-Route::get('/login', function () {
-    return "login";
-})->name('login');
-
-
-Route::get('/usuario/{id}', function ($id) {
-    $prueba = 'asdfasdfas';
-    return view('playas',compact('id','prueba'));
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
-Route::get('/playas/{id}', [Playas::class, 'playas_de_arena']);
-
-
-
-Route::get('/perfil', function () {
-    return view('welcome');
-})->middleware('auth');
-
-
-
-Route::get('/usuarios'     , [Usuario::class, 'index']);
-Route::get('/usuarios/{id}', [Usuario::class, 'show']);
-
-
-
-Route::post('/procesar-datos', [DatosController::class, 'procesar']);
-
-Route::get('/procesar-datos'     , [DatosController::class, 'form_procesar']);
-Route::get('/alta-libro-tolkien' , [LibroController::class, 'alta_libro']);
-Route::get('/mostrar-libro-tolkien/{id}' , [LibroController::class, 'mostrar_libro']);
 
 
 Route::get('/libros'       , [LibroController::class, 'listado'])->name('libros.listado');
@@ -56,3 +32,11 @@ Route::get('/libro/eliminar/{id}'   , [LibroController::class, 'eliminar'])->nam
 Route::get('/libros/nuevo'          , [LibroController::class, 'alta'])->name('libros.alta');
 Route::post('/libros/nuevo'         , [LibroController::class, 'almacenar'])->name('libros.almacenar');
 
+
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+})->middleware('auth');
+
+
+
+require __DIR__.'/auth.php';
